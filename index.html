@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Contatos</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="contato.js"></script>
+  </head>
+  <body>
+    <div class="general">
+      <h1 class="title">Cadastro de Contatos</h1>
+      <div class="center">
+        <form class="formCadastro" id="formCadastro">
+          <label for="txtName">Name</label><br />
+          <input type="text" id="txtName" placeholder="your name" /><br />
+
+          <label for="txtPhone">Phone</label><br />
+          <input type="text" id="txtPhone" placeholder="your phone" />
+
+          <label for="txtStreet">Street</label><br />
+          <input type="text" id="txtStreet" placeholder="your street" />
+
+          <label for="txtZip">Zip Code</label><br />
+          <input type="text" id="txtZip" placeholder="your zip code" />
+
+          <label for="txtNumber">Number</label><br />
+          <input type="text" id="txtNumber" placeholder="number at home" />
+
+          <label for="txtCity">City</label><br />
+          <input type="text" id="txtCity" placeholder="your city" />
+
+          <fieldset>
+            <legend>Work or Family</legend>
+
+            <input type="radio" name="type" value="Work" id="work" checked />
+            <label for="work">Work</label><br />
+
+            <input type="radio" name="type" value="Family" id="family" />
+            <label for="family">Family</label>
+          </fieldset>
+          <br />
+          <input
+            type="submit"
+            name=""
+            id="btnCadastraContato"
+            value="Cadastrar"
+          />
+        </form>
+      </div>
+      <table id="attList">
+        <caption>
+          <h2>Contatos</h2>
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Street</th>
+            <th>Zip Code</th>
+            <th>Number</th>
+            <th>City</th>
+            <th>Type</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="contatosCadastrados"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
